@@ -1,0 +1,1516 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#main {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+nav {
+    height: fit-content;
+    width: fit-content;
+    background-color: blue;
+    position: absolute;
+    top: 14%;
+    left: 2.5%;
+    padding: 25px 22px;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 9;
+    box-shadow: 5px 5px 50px #000c418f;
+}
+
+nav h1 {
+    font-size: 4vw;
+    letter-spacing: 5px;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: Dharma Gothic E;
+    border-bottom: 1px solid #dadada;
+}
+
+nav h3 {
+    font-size: 1vw;
+    margin-top: 1vw;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+nav h3 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav h3 a:hover {
+    color: #858585;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: #222;
+}
+
+#top-label {
+    background-color: black;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 14px 20px;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 9;
+}
+
+#top-label h4 {
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+#coverpage {
+    height: 100vh;
+    width: 100%;
+    background-color: red;
+    overflow: hidden;
+}
+
+#coverpage video {
+    height: fit-content;
+    width: 100%;
+}
+
+#content {
+    position: absolute;
+    bottom: 5%;
+    left: 43%;
+    transform: translateX(-50%);
+    height: 15vw;
+    width: 50%;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#content h6 {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+#content h1 {
+    font-size: 6vw;
+    white-space: nowrap;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+#content p {
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+#content .links-h6 {
+    display: flex;
+    gap: 1vw;
+    margin-top: 1vw;
+}
+
+
+#stroke {
+    border: 0.2px solid #ffffff44;
+    height: 100vh;
+    top: 0;
+    left: 17.5%;
+    position: absolute;
+}
+
+
+
+
+
+
+#page2 {
+    height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+#title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    width: 100%;
+    padding: 1vw;
+}
+
+#title h3 {
+    font-weight: 500;
+    color: #ff0000;
+    border-bottom: 0.5px solid;
+}
+
+#title h4 {
+    font-weight: 400;
+    font-size: 18px;
+    color: #1e00ff;
+}
+
+#products {
+    height: 88vh;
+    width: fit-content;
+    margin-left: 18%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 8;
+    gap: 2vw;
+}
+
+.card {
+    height: 100%;
+    width: 500px;
+    border: 0.1px solid rgb(2, 2, 2);
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 1vw;
+    overflow: hidden;
+}
+
+.card .img-con {
+    height: 650px;
+    width: 100%;
+    filter: blur(10px);
+    transition: all ease .6s;
+}
+
+.card:hover .img-con {
+    filter: blur(0px);
+}
+
+.card .img-con img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card h4 {
+    font-size: 2vw;
+    text-transform: uppercase;
+    padding: 2vw 1vw;
+    transition: all ease .2s;
+}
+
+.card h4:hover {
+    color: #0b005f;
+}
+
+.card #price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 1vw;
+}
+
+.card #price h5 {
+    font-size: larger;
+}
+
+.card #price h5:nth-child(2) {
+    background-color: blue;
+    padding: 4px 8px;
+    color: #fff;
+    border-radius: 50px;
+    font-weight: 100;
+}
+
+#page3 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+#page3 #left {
+    height: 100%;
+    width: 50%;
+    transition: all ease .2s;
+    filter: grayscale(10);
+}
+
+#page3 #left:hover {
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+#page3 #left img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#page3 #txt-content {
+    position: absolute;
+    left: 14%;
+    bottom: 5%;
+}
+
+#page3 #txt-content h2 {
+    font-size: 2vw;
+    font-weight: 400;
+    color: #fff;
+}
+
+#page3 #txt-content h5 {
+    font-size: 1vw;
+    font-weight: 400;
+    color: #fff;
+}
+
+#page3 #right {
+    height: 100%;
+    width: 50%;
+    filter: grayscale(10);
+    position: relative;
+    transition: all ease .2s;
+}
+
+#page3 #right:hover {
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+#page3 #right img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#page3 #txt-content2 {
+    position: absolute;
+    left: 14%;
+    bottom: 5%;
+}
+
+#page3 #txt-content2 h2 {
+    font-size: 2vw;
+    font-weight: 400;
+    color: #fff;
+}
+
+#page3 #txt-content2 h5 {
+    font-size: 1vw;
+    font-weight: 400;
+    color: #fff;
+}
+
+#page4 {
+    height: 100vh;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+#page4 #collections {
+    height: 100%;
+    width: 85%;
+    background-color: #ffffff;
+    position: relative;
+    margin-left: 15%;
+    display: flex;
+    align-items: center;
+    gap: 2.5vw;
+    padding: 2vw;
+    position: relative;
+}
+
+#collections h3 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2vw;
+    font-weight: 400;
+}
+
+.collection-card {
+    height: 80%;
+    width: 30%;
+    backdrop-filter: blur(20px);
+    border: 1px solid #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+    border-radius: 20px;
+    padding: 2vw;
+    margin-top: 4vw;
+    overflow: hidden;
+}
+
+.collection-card #img-con {
+    height: 70%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.collection-card #img-con img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.collection-card h2 {
+    font-size: 2vw;
+    font-weight: 400;
+}
+
+.collection-card p {
+    font-size: 1vw;
+    text-align: center;
+}
+
+.collection-card #btm-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1vw 2vw;
+}
+
+.collection-card #btm-content h6 {
+    background-color: #1e00ff;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    border-radius: 50px;
+}
+
+.collection-card #btm-content button {
+    border: 0.5px solid #000000;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: #000000;
+    background-color: #ffffff00;
+    font-weight: 400;
+    border-radius: 50px;
+}
+
+.collection-card #btm-content button:hover {
+    background-color: #000000;
+    color: #ffff;
+    cursor: pointer;
+}
+
+#page5 {
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+#page5 h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 8vw;
+    z-index: 6;
+    white-space: nowrap;
+    color: #000000;
+    font-family: integral CF;
+}
+
+#page5 h1:nth-child(2) {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 2vw;
+    white-space: nowrap;
+    font-family: integral CF;
+}
+
+#page5 p {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1vw;
+    white-space: nowrap;
+    color: #000000;
+    text-transform: lowercase;
+}
+
+#page5 .bluryball {
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    filter: blur(150px);
+    top: 60%;
+    right: 0%;
+    animation-name: blury2;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background: linear-gradient(-45deg, #0066ff, #00bfff, #0000ff, #ff00b7);
+}
+
+#page5 .bluryball2 {
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    animation-name: blury;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    top: 10%;
+    left: 0%;
+    background: linear-gradient(-45deg, #ffb700, #cc00ff, #0000ff, #00ffff);
+}
+
+@keyframes blury {
+    0% {
+        filter: blur(80px);
+        height: 500px;
+        width: 500px;
+        background: linear-gradient(-45deg, #ff0000, #ff0d00, #ff7300, #fff700);
+
+    }
+
+    50% {
+        height: 800px;
+        width: 800px;
+        filter: blur(150px);
+        background: linear-gradient(-45deg, #ffa200, #ff9900, #ff7300, #fff700);
+    }
+
+    100% {
+        height: 500px;
+        width: 500px;
+        filter: blur(80px);
+        background: linear-gradient(-45deg, #ff0000, #ff0d00, #ff7300, #fff700);
+    }
+
+}
+
+@keyframes blury2 {
+    0% {
+        filter: blur(80px);
+        height: 500px;
+        width: 500px;
+        background: linear-gradient(-45deg, #00aeff, #2600ff, #9d00ff, #00fbff);
+
+    }
+
+    50% {
+        height: 1000px;
+        width: 800px;
+        filter: blur(150px);
+        background: linear-gradient(-45deg, #00aeff, #fb00ff, #00c8ff, #00ff04);
+    }
+
+    100% {
+        height: 500px;
+        width: 500px;
+        filter: blur(80px);
+        background: linear-gradient(-45deg, #00aeff, #2600ff, #9d00ff, #00fbff);
+    }
+
+}
+
+#footer {
+    height: 60vh;
+    width: 100%;
+    background-color: #0066ff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#footer h1 {
+    font-size: 14vw;
+    font-family: monument;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#footer #footer-btm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 70px;
+}
+
+#footer h3 {
+    font-size: 1vw;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 400;
+}
+
+#footer p {
+    position: absolute;
+    bottom: 5%;
+    font-size: 18px;
+    letter-spacing: 20px;
+    color: #00bfff;
+    text-transform: capitalize;
+}
+
+
+
+/* --------------responsiveness-------- */
+
+
+
+@media (min-width:360px) {
+
+    #main {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    nav h1 {
+        font-size: 8vw;
+    }
+
+    nav h3 {
+        font-size: 4.5vw;
+        margin-top: 2vw;
+    }
+
+    #top-label {
+        padding: 5px 20px;
+    }
+
+    #top-label h4 {
+        opacity: 0;
+    }
+
+    #top-label h4:nth-child(1) {
+        opacity: 1;
+        white-space: nowrap;
+        font-size: 20px;
+    }
+
+    #coverpage video {
+        height: 100%;
+        width: fit-content;
+    }
+
+    #content {
+        position: absolute;
+        bottom: 25%;
+        left: 43%;
+        transform: translateX(-50%);
+        height: 15vw;
+        width: 50%;
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #content h6 {
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #fff;
+    }
+
+    #content h1 {
+        font-size: 8vw;
+        white-space: nowrap;
+        text-transform: capitalize;
+        color: #fff;
+    }
+
+    #content p {
+        font-size: 11px;
+        text-transform: capitalize;
+        color: #fff;
+    }
+
+    #content .links-h6 {
+        display: flex;
+        gap: 4vw;
+        white-space: nowrap;
+        margin-top: 1vw;
+    }
+
+    #title {
+        padding: 10px 20px;
+    }
+
+    #title h3 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    #title h4 {
+        font-size: 16px;
+    }
+
+    #page2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #products {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        gap: 4vw;
+    }
+
+    .card {
+        height: 100%;
+        width: 80vw;
+    }
+
+    .card .img-con {
+        height: 140px;
+        width: 100%;
+    }
+
+    .card h4 {
+        font-size: 6vw;
+    }
+
+    .card #price {
+        padding: 0vw 2vw;
+    }
+
+    .card #price h5 {
+        font-size: 14px;
+    }
+
+    #page3 {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        position: relative;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #page3 #left {
+        height: 50%;
+        width: 100%;
+    }
+
+    #page3 #txt-content {
+        bottom: 8%;
+    }
+
+    #page3 #txt-content h2 {
+        font-size: 8vw;
+    }
+
+    #page3 #txt-content h5 {
+        font-size: 4vw;
+    }
+
+    #page3 #right {
+        height: 50%;
+        width: 100%;
+    }
+
+
+    #page3 #txt-content2 {
+        bottom: 8%;
+    }
+
+    #page3 #txt-content2 h2 {
+        font-size: 8vw;
+    }
+
+    #page3 #txt-content2 h5 {
+        font-size: 4vw;
+    }
+
+    #page4 {
+        position: relative;
+        height: 100vh;
+        background-color: #fff;
+        width: 100%;
+    }
+
+    #page4 #collections {
+        height: 85%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        gap: 6vw;
+        margin-top: 0%;
+        margin-left: 0%;
+        background-color: #ffffff00;
+    }
+
+    #collections h3 {
+        top: -2%;
+        white-space: nowrap;
+        font-size: 8vw;
+    }
+
+    .collection-card {
+        height: 60%;
+        width: 100%;
+    }
+
+    .collection-card #img-con {
+        border-radius: 20px;
+    }
+
+    .collection-card #img-con img {
+        object-position: bottom;
+    }
+
+    .collection-card h2 {
+        font-size: 6vw;
+        font-weight: 400;
+    }
+
+    .collection-card p {
+        font-size: 2.8vw;
+        text-align: center;
+    }
+
+
+
+    .collection-card #btm-content h6 {
+        font-size: 12px;
+    }
+
+    .collection-card #btm-content button {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    #page5 {
+        height: 100vh;
+        width: 100%;
+        background-color: #fff;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #page5 h1 {
+        font-size: 20vw;
+        top: 45%;
+        color: #ffff;
+        mix-blend-mode: difference;
+        font-family: Dharma Gothic E;
+    }
+
+    #page5 h1:nth-child(2) {
+        top: 52%;
+        font-size: 5vw;
+        color: #ffff;
+    }
+
+    #page5 p {
+        top: 58%;
+        font-size: 4vw;
+        color: #ffffff;
+        z-index: 6;
+    }
+
+
+    @keyframes blury {
+        0% {
+            filter: blur(80px);
+            height: 500px;
+            width: 500px;
+            background: linear-gradient(-45deg, #8400ff, #000000, #ff0055, #000000);
+
+        }
+
+        50% {
+            height: 800px;
+            width: 800px;
+            filter: blur(150px);
+            background: linear-gradient(-45deg, #ff6600, #000000, #fbff00, #000000);
+        }
+
+        100% {
+            height: 500px;
+            width: 500px;
+            filter: blur(80px);
+            background: linear-gradient(-45deg, #8400ff, #000000, #ff0055, #000000);
+        }
+
+    }
+
+    @keyframes blury2 {
+        0% {
+            filter: blur(80px);
+            height: 500px;
+            width: 500px;
+            background: linear-gradient(-45deg, #00aeff, #2600ff, #9d00ff, #00fbff);
+
+        }
+
+        50% {
+            height: 1000px;
+            width: 800px;
+            filter: blur(150px);
+            background: linear-gradient(-45deg, #00aeff, #fb00ff, #00c8ff, #00ff04);
+        }
+
+        100% {
+            height: 500px;
+            width: 500px;
+            filter: blur(80px);
+            background: linear-gradient(-45deg, #00aeff, #2600ff, #9d00ff, #00fbff);
+        }
+
+    }
+
+    #footer {
+        height: 40vh;
+    }
+
+    #footer h1 {
+        font-size: 50vw;
+    }
+
+    #footer #footer-btm {
+        padding: 0 30px;
+    }
+
+    #footer h3 {
+        font-size: 3.2vw;
+        white-space: nowrap;
+    }
+
+    #footer p {
+        font-size: 16px;
+        letter-spacing: 0;
+        text-transform: lowercase;
+        color: #afd7ff;
+    }
+}
+
+@media (min-width:1280px) {
+    #main {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    nav {
+        height: fit-content;
+        width: fit-content;
+        background-color: blue;
+        position: absolute;
+        top: 14%;
+        left: 1%;
+        padding: 25px 22px;
+        border-radius: 10px;
+        position: fixed;
+        z-index: 9;
+        box-shadow: 5px 5px 50px #000c418f;
+    }
+
+    nav h1 {
+        font-size: 4vw;
+        letter-spacing: 5px;
+        font-style: italic;
+        text-transform: uppercase;
+        color: #fff;
+        font-family: Dharma Gothic E;
+        border-bottom: 1px solid #dadada;
+    }
+
+    nav h3 {
+        font-size: 1vw;
+        margin-top: 1vw;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+    nav h3 a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    nav h3 a:hover {
+        color: #858585;
+    }
+
+    #page1 {
+        height: 100vh;
+        width: 100%;
+        background-color: #222;
+    }
+
+    #top-label {
+        background-color: black;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        padding: 14px 20px;
+        width: 100%;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 9;
+    }
+
+    #top-label h4 {
+        font-weight: 400;
+        text-transform: capitalize;
+        opacity: 1;
+    }
+
+    #coverpage {
+        height: 100vh;
+        width: 100%;
+        background-color: red;
+        overflow: hidden;
+    }
+
+    #coverpage video {
+        height: fit-content;
+        width: 100%;
+    }
+
+    #content {
+        position: absolute;
+        bottom: 5%;
+        left: 43%;
+        transform: translateX(-50%);
+        height: 15vw;
+        width: 50%;
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #content h6 {
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #fff;
+    }
+
+    #content h1 {
+        font-size: 6vw;
+        white-space: nowrap;
+        text-transform: capitalize;
+        color: #fff;
+    }
+
+    #content p {
+        font-size: 18px;
+        text-transform: capitalize;
+        color: #fff;
+    }
+
+    #content .links-h6 {
+        display: flex;
+        gap: 1vw;
+        margin-top: 1vw;
+    }
+
+
+    #stroke {
+        border: 0.2px solid #ffffff44;
+        height: 100vh;
+        top: 0;
+        left: 17.5%;
+        position: absolute;
+    }
+
+
+
+
+
+
+    #page2 {
+        height: 100vh;
+        width: 100%;
+        background-color: #ffffff;
+    }
+
+    #title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #fff;
+        width: 100%;
+        padding: 1vw;
+    }
+
+    #title h3 {
+        font-weight: 500;
+        color: #ff0000;
+        border-bottom: 0.5px solid;
+    }
+
+    #title h4 {
+        font-weight: 400;
+        font-size: 18px;
+        color: #1e00ff;
+    }
+
+    #products {
+        height: 88vh;
+        width: fit-content;
+        margin-left: 15%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        z-index: 8;
+        gap: 2vw;
+    }
+
+    .card {
+        height: 100%;
+        width: 500px;
+        border: 0.1px solid rgb(2, 2, 2);
+        cursor: pointer;
+        border-radius: 25px;
+        padding: 1vw;
+        overflow: hidden;
+    }
+
+    .card .img-con {
+        height: 650px;
+        width: 100%;
+        filter: blur(10px);
+        transition: all ease .6s;
+    }
+
+    .card:hover .img-con {
+        filter: blur(0px);
+    }
+
+    .card .img-con img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .card h4 {
+        font-size: 2vw;
+        text-transform: uppercase;
+        padding: 2vw 1vw;
+        transition: all ease .2s;
+    }
+
+    .card h4:hover {
+        color: #0b005f;
+    }
+
+    .card #price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0vw 1vw;
+    }
+
+    .card #price h5 {
+        font-size: larger;
+    }
+
+    .card #price h5:nth-child(2) {
+        background-color: blue;
+        padding: 4px 8px;
+        color: #fff;
+        border-radius: 50px;
+        font-weight: 100;
+    }
+
+    #page3 {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        position: relative;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    #page3 #left {
+        height: 100%;
+        width: 50%;
+        transition: all ease .2s;
+        filter: grayscale(10);
+    }
+
+    #page3 #left:hover {
+        filter: grayscale(0);
+        cursor: pointer;
+    }
+
+    #page3 #left img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #page3 #txt-content {
+        position: absolute;
+        left: 14%;
+        bottom: 5%;
+    }
+
+    #page3 #txt-content h2 {
+        font-size: 2vw;
+        font-weight: 400;
+        color: #fff;
+    }
+
+    #page3 #txt-content h5 {
+        font-size: 1vw;
+        font-weight: 400;
+        color: #fff;
+    }
+
+    #page3 #right {
+        height: 100%;
+        width: 50%;
+        filter: grayscale(10);
+        position: relative;
+        transition: all ease .2s;
+    }
+
+    #page3 #right:hover {
+        filter: grayscale(0);
+        cursor: pointer;
+    }
+
+    #page3 #right img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #page3 #txt-content2 {
+        position: absolute;
+        left: 14%;
+        bottom: 5%;
+    }
+
+    #page3 #txt-content2 h2 {
+        font-size: 2vw;
+        font-weight: 400;
+        color: #fff;
+    }
+
+    #page3 #txt-content2 h5 {
+        font-size: 1vw;
+        font-weight: 400;
+        color: #fff;
+    }
+
+    #page4 {
+        height: 100vh;
+        background-color: #ffffff;
+        width: 100%;
+    }
+
+    #page4 #collections {
+        height: 100%;
+        width: 85%;
+        background-color: #ffffff;
+        position: relative;
+        margin-left: 10%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 2.5vw;
+        padding: 2vw;
+        position: relative;
+    }
+
+    #collections h3 {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2vw;
+        font-weight: 400;
+    }
+
+    .collection-card {
+        height: 80%;
+        width: 30%;
+        backdrop-filter: blur(20px);
+        border: 1px solid #000000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1vw;
+        border-radius: 20px;
+        padding: 2vw;
+        margin-top: 4vw;
+        overflow: hidden;
+    }
+
+    .collection-card #img-con {
+        height: 70%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .collection-card #img-con img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .collection-card h2 {
+        font-size: 2vw;
+        font-weight: 400;
+    }
+
+    .collection-card p {
+        font-size: 1vw;
+        text-align: center;
+    }
+
+    .collection-card #btm-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 1vw 2vw;
+    }
+
+    .collection-card #btm-content h6 {
+        background-color: #1e00ff;
+        padding: 5px 10px;
+        font-size: 16px;
+        color: #fff;
+        font-weight: 400;
+        border-radius: 50px;
+    }
+
+    .collection-card #btm-content button {
+        border: 0.5px solid #000000;
+        padding: 5px 10px;
+        font-size: 16px;
+        color: #000000;
+        background-color: #ffffff00;
+        font-weight: 400;
+        border-radius: 50px;
+    }
+
+    .collection-card #btm-content button:hover {
+        background-color: #000000;
+        color: #ffff;
+        cursor: pointer;
+    }
+
+    #page5 {
+        height: 100vh;
+        width: 100%;
+        background-color: #fff;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #page5 h1 {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 8vw;
+        z-index: 6;
+        white-space: nowrap;
+        color: #ffffff;
+        font-family: integral CF;
+    }
+
+    #page5 h1:nth-child(2) {
+        position: absolute;
+        top: 52%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 2vw;
+        white-space: nowrap;
+        font-family: integral CF;
+    }
+
+    #page5 p {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 1vw;
+        white-space: nowrap;
+        color: #000000;
+        text-transform: lowercase;
+    }
+
+    #page5 .bluryball {
+        position: absolute;
+        height: 500px;
+        width: 500px;
+        border-radius: 50%;
+        filter: blur(150px);
+        top: 60%;
+        right: 0%;
+        animation-name: blury2;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        background: linear-gradient(-45deg, #0066ff, #00bfff, #0000ff, #ff00b7);
+    }
+
+    #page5 .bluryball2 {
+        position: absolute;
+        height: 500px;
+        width: 500px;
+        border-radius: 50%;
+        animation-name: blury;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        top: 10%;
+        left: 0%;
+        background: linear-gradient(-45deg, #ffb700, #cc00ff, #0000ff, #00ffff);
+    }
+
+    @keyframes blury {
+        0% {
+            filter: blur(80px);
+            height: 500px;
+            width: 500px;
+            background: linear-gradient(-45deg, #ff0000, #ff0d00, #ff7300, #fff700);
+
+        }
+
+        50% {
+            height: 800px;
+            width: 800px;
+            filter: blur(150px);
+            background: linear-gradient(-45deg, #ffa200, #ff9900, #ff7300, #fff700);
+        }
+
+        100% {
+            height: 500px;
+            width: 500px;
+            filter: blur(80px);
+            background: linear-gradient(-45deg, #ff0000, #ff0d00, #ff7300, #fff700);
+        }
+
+    }
+
+    @keyframes blury2 {
+        0% {
+            filter: blur(80px);
+            height: 500px;
+            width: 500px;
+            background: linear-gradient(-45deg, #00aeff, #2600ff, #9d00ff, #00fbff);
+
+        }
+
+        50% {
+            height: 1000px;
+            width: 800px;
+            filter: blur(150px);
+            background: linear-gradient(-45deg, #00aeff, #fb00ff, #00c8ff, #00ff04);
+        }
+
+        100% {
+            height: 500px;
+            width: 500px;
+            filter: blur(80px);
+            background: linear-gradient(-45deg, #00aeff, #2600ff, #9d00ff, #00fbff);
+        }
+
+    }
+
+    #footer {
+        height: 60vh;
+        width: 100%;
+        background-color: #0066ff;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+    }
+
+    #footer h1 {
+        font-size: 14vw;
+        font-family: monument;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    #footer #footer-btm {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 70px;
+    }
+
+    #footer h3 {
+        font-size: 1vw;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 400;
+    }
+
+    #footer p {
+        position: absolute;
+        bottom: 5%;
+        font-size: 18px;
+        letter-spacing: 20px;
+        color: #00bfff;
+        text-transform: capitalize;
+    }
+
+}

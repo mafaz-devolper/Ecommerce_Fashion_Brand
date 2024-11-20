@@ -1,0 +1,533 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100vh;
+    width: 100%;
+    padding: 2vw;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+}
+
+#product-img {
+    height: 80vh;
+    width: 50%;
+    padding: 2vw;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+#product-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#product-details {
+    height: 100%;
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 3vw 2vw;
+}
+
+#product-details h2 {
+    font-size: 2.2vw;
+    font-weight: 400;
+    font-family: Monument;
+}
+
+#product-details p {
+    font-size: 20px;
+    margin-top: 0.5vw;
+    font-weight: 400;
+}
+
+#product-details h4 {
+    font-size: 65px;
+    margin-top: 0.2vw;
+    font-weight: 400;
+    font-family: Dharma Gothic E;
+}
+
+#product-details #product-con {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+#product-details #product-con h6 {
+    font-size: 22px;
+    font-weight: 100;
+}
+
+#product-details #product-con h6:nth-child(1) {
+    background-color: rgb(0, 0, 0);
+    padding: 6px 16px;
+    color: #fff;
+    border-radius: 50px;
+}
+
+#product-details button {
+    border: none;
+    width: 100%;
+    height: 6.5vh;
+    font-size: 30px;
+    color: #ffffff;
+    border-radius: 10px;
+    margin: 1.5vw 0vw;
+    background-color: #0015ff;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+#product-details button:hover {
+    background-color: #000b80;
+}
+
+#img-con-main {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    padding: 1.5vw 0;
+}
+
+.img-con {
+    height: 35vh;
+    width: 50%;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #494949;
+}
+
+.img-con img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#msg {
+    opacity: 0;
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    backdrop-filter: blur(10px);
+    background-color: #080065a7;
+    top: 0%;
+    left: 50%;
+    border-radius: 25px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    transition: all ease .8s;
+    padding: 2vw;
+}
+
+#msg .con {
+    background-color: #00ff0d;
+    width: 40%;
+    position: relative;
+    height: 40%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#msg .con h1 {
+    position: absolute;
+    font-size: 7vw;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+}
+
+#msg h2 {
+    font-size: 2vw;
+    white-space: nowrap;
+    text-align: center;
+    color: #fff;
+}
+
+#msg h3 {
+    font-size: 1vw;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+}
+
+#msg button {
+    font-size: 1vw;
+    padding: 0.5vw 2vw;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    background-color: #ffffff00;
+    color: #ffffff;
+}
+
+#msg button:hover {
+    font-size: 1vw;
+    padding: 0.5vw 2vw;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 50px;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+}
+
+#main a {
+    text-decoration: none;
+    position: absolute;
+    top: 3%;
+    color: #000000;
+    left: 2%;
+    font-size: 3vw;
+    border-radius: 50%;
+    transition: all ease .4s;
+}
+
+#main a:hover {
+    color: #0066ff;
+}
+
+@media (min-width:360px) {
+    
+#main {
+    height: fit-content;
+    width: 100%;
+    padding: 2vw;
+    background-color: #fff;
+    flex-direction: column;
+    gap: 8vw;
+}
+
+#product-img {
+    height: 60vh;
+    width: 90%;
+    margin-top: 15vw;
+    padding: 0vw;
+    border:none;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #000b80;
+}
+
+#product-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#product-details {
+    height: 100%;
+    width: 90%;
+    border: none;
+    padding: 3vw 2vw;
+}
+
+#product-details h2 {
+    font-size: 8vw;
+}
+
+#product-details p {
+    font-size: 14px;
+}
+
+#product-details h4 {
+    font-size: 55px;
+}
+
+#product-details #product-con {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+#product-details #product-con h6 {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+#product-details #product-con h6:nth-child(1) {
+    background-color: rgb(0, 0, 0);
+    padding: 6px 16px;
+    color: #fff;
+    border-radius: 50px;
+}
+
+#product-details button {
+    margin: 5vw 0vw;
+}
+
+
+#msg {
+    opacity: 0;
+    height: 310px;
+    width: 280px;
+    gap: 4vw;
+    padding: 6vw;
+    position: fixed;
+}
+
+#msg .con {
+    width: 25%;
+    height: 25%;
+}
+
+#msg .con h1 {
+    font-size: 12vw;
+}
+
+#msg h2 {
+    font-size: 8vw;
+    white-space: inherit;
+}
+
+#msg h3 {
+    font-size: 3vw;
+    text-align: center;
+    color: #fff;
+    font-weight: 100;
+}
+
+#msg button {
+    font-size: 19px;
+    padding: 3vw 16vw;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    background-color: #ffffff00;
+    color: #ffffff;
+}
+
+#msg button:hover {
+    font-size: 1vw;
+    padding: 0.5vw 2vw;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 50px;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+}
+
+#main a {
+    top: 2%;
+    left: 6%;
+    font-size: 10vw;
+}
+}
+
+@media (min-width:1280px) {
+    #main {
+        height: 100vh;
+        width: 100%;
+        padding: 2vw;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        gap: 4vw;
+    }
+    
+    #product-img {
+        height: 80vh;
+        margin-top: 0;
+        width: 50%;
+        padding: 2vw;
+        background-color: #00000000;
+        border: 1px solid black;
+        border-radius: 20px;
+    }
+    
+    #product-img img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    #product-details {
+        height: 100%;
+        width: 30%;
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 3vw 2vw;
+    }
+    
+    #product-details h2 {
+        font-size: 2.2vw;
+        font-weight: 400;
+        font-family: Monument;
+    }
+    
+    #product-details p {
+        font-size: 20px;
+        margin-top: 0.5vw;
+        font-weight: 400;
+    }
+    
+    #product-details h4 {
+        font-size: 65px;
+        margin-top: 0.2vw;
+        font-weight: 400;
+        font-family: Dharma Gothic E;
+    }
+    
+    #product-details #product-con {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 12px;
+    }
+    
+    #product-details #product-con h6 {
+        font-size: 22px;
+        font-weight: 100;
+    }
+    
+    #product-details #product-con h6:nth-child(1) {
+        background-color: rgb(0, 0, 0);
+        padding: 6px 16px;
+        color: #fff;
+        border-radius: 50px;
+    }
+    
+    #product-details button {
+        border: none;
+        width: 100%;
+        height: 6.5vh;
+        font-size: 30px;
+        color: #ffffff;
+        border-radius: 10px;
+        margin: 1.5vw 0vw;
+        text-transform: capitalize;
+        font-weight: 800;
+    }
+    
+    #product-details button:hover {
+        background-color: #000b80;
+    }
+    
+    #img-con-main {
+        display: flex;
+        align-items: center;
+        gap: 1vw;
+        padding: 1.5vw 0;
+    }
+    
+    .img-con {
+        height: 35vh;
+        width: 50%;
+        border-radius: 20px;
+        overflow: hidden;
+        background-color: #494949;
+    }
+    
+    .img-con img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    #msg {
+        opacity: 0;
+        height: 500px;
+        width: 500px;
+        position: absolute;
+        backdrop-filter: blur(10px);
+        background-color: #080065a7;
+        top: 0%;
+        left: 50%;
+        border-radius: 25px;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1vw;
+        transition: all ease .8s;
+        padding: 2vw;
+    }
+    
+    #msg .con {
+        background-color: #00ff0d;
+        width: 40%;
+        position: relative;
+        height: 40%;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    
+    #msg .con h1 {
+        position: absolute;
+        font-size: 7vw;
+        top: 50%;
+        left: 50%;
+        color: #fff;
+        transform: translate(-50%, -50%);
+    }
+    
+    #msg h2 {
+        font-size: 2vw;
+        white-space: nowrap;
+        text-align: center;
+        color: #fff;
+    }
+    
+    #msg h3 {
+        font-size: 1vw;
+        text-align: center;
+        color: #fff;
+        font-weight: 400;
+    }
+    
+    #msg button {
+        font-size: 1vw;
+        padding: 0.5vw 2vw;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 50px;
+        background-color: #ffffff00;
+        color: #ffffff;
+    }
+    
+    #msg button:hover {
+        font-size: 1vw;
+        padding: 0.5vw 2vw;
+        border: 1px solid rgba(255, 255, 255, 0);
+        border-radius: 50px;
+        background-color: #ffffff;
+        color: #000000;
+        cursor: pointer;
+    }
+    
+    #main a {
+        text-decoration: none;
+        position: absolute;
+        top: 3%;
+        color: #000000;
+        left: 2%;
+        font-size: 3vw;
+        border-radius: 50%;
+        transition: all ease .4s;
+    }
+    
+    #main a:hover {
+        color: #0066ff;
+    }
+}
